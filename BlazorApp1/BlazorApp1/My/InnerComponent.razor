@@ -1,0 +1,15 @@
+﻿
+@typeparam TEntityUrl where TEntityUrl: BaseForUrl<TEntity>, new()
+@typeparam TEntity where TEntity : class, IHaveUrls<TEntityUrl, TEntity>, new()
+	<div>
+		Hi!
+	</div>
+
+	@(Item?.Urls[0].UrlTitle)
+
+@code {
+
+	[Parameter]
+	public TEntity? Item { get; set; }
+
+}
