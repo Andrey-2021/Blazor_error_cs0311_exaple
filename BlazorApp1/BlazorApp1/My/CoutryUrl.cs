@@ -2,5 +2,5 @@
 
 public class CoutryUrl: BaseForUrl<Country>
 {
-	
+	public int AnyProperty { get; set; }
 }
